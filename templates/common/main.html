@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>主页</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/left-side-menu.css">
+    <link rel="stylesheet" type="text/css" href="/static/font/iconfont.css">
+
+    <link rel="stylesheet" href="/static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="/static/css/layuiChange.css">
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="/static/js/left-side-menu.js"></script>
+    <script type="text/javascript" src="/static/js/span-click.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
+    <script src="/static/layui/layui.js" charset="utf-8"></script>
+    <script src="/static/js/student.js"></script>
+
+</head>
+<body>
+<!--<div class="top" style="width: 100%;height: 80px;background-color: #397bc5">-->
+<!--    -->
+<!--</div>-->
+<img src="/static/images/znglxt.png"/>
+<div class="left-side-menu" style="float: left; height: 100%">
+    <div class="lsm-expand-btn">
+        <div class="lsm-mini-btn">
+            <label>
+                <input type="checkbox" checked="checked">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="30"/>
+                    <path class="line--1" d="M0 40h62c18 0 18-20-17 5L31 55"/>
+                    <path class="line--2" d="M0 50h80"/>
+                    <path class="line--3" d="M0 60h62c18 0 18 20-17-5L31 45"/>
+                </svg>
+            </label>
+
+        </div>
+
+
+    </div>
+    <div class="lsm-container">
+        <div class="lsm-scroll">
+            <div class="lsm-sidebar">
+                <ul>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:；"><i class="iconfont lsm-sidebar-icon icon-icon-"></i><span>个人信息</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:;" id="personalInf"><span class="iconfont icon-guanliyuan"
+                                                             id="zhgl">账号密码管理</span></a></li>
+                            <li><a href="javascript:;"><span class="iconfont icon-loudong" id="ldxx">宿舍数据</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-icon_qq" id="qtxx">身份信息</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i
+                                class="iconfont lsm-sidebar-icon icon-shexiangtou"></i><span
+                                id="shexiangtou">摄像头管理</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">开启</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">关闭</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">基础设置</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i
+                                class="iconfont lsm-sidebar-icon icon-iconset0211"></i><span>安全管理</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:;"><span class="iconfont icon-Group-" id="shipin">陌生人员访问预警</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-wenduji" id="wendu">宿舍温度湿度超标预警</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span
+                                    class="iconfont icon-IOTtubiao_huabanfuben" id="door">房门长时间开启预警</span></a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i
+                                class="iconfont lsm-sidebar-icon icon-icon_service"></i><span id="service_community">服务社区</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="/student/yuntu"><span class="iconfont icon-IOTtubiao_huabanfuben" id="cloud_photo">宿舍云相册</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">管理员在线交流</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">宿舍成员在线交流</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i
+                                class="iconfont lsm-sidebar-icon icon-shezhi"></i><span id="sleepReportingSystem">报寝系统</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:;"><span class="iconfont icon-B">日常报寝</span></a></li>
+                            <li><a href="javascript:;"><span class="iconfont icon-daxiaoxie">请假</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i
+                                class="iconfont lsm-sidebar-icon icon-tuichu5"></i><span>退出系统</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="/main/exitSystem"><span class="iconfont icon-tuichu5">退出</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div style="float: left; width: 1200px ;margin-left: 0px;height: 100%;background-color:#6bfff3" id="rightBody">
+
+
+    <div>
+    <div class="layui-carousel " id="test3" lay-filter="test4" style="width:1200px; height: 550px">
+        <div carousel-item="" >
+            <div><img src="/static/images/tiedao/tiedao.jpg" alt="" style="width:1200px; height: 550px"></div>
+            <div><img src="/static/images/tiedao/tiedao2.jpg" alt=""style="width:1200px; height: 550px"></div>
+            <div><img src="/static/images/tiedao/tiedao3.jpg" alt="" style="width:1200px; height: 550px"></div>
+            <div><img src="/static/images/tiedao/tiedao4.jpg" alt="" style="width:1200px; height: 550px"></div>
+            <div><img src="/static/images/tiedao/tiedao5.jpg" alt="" style="width:1200px; height: 550px"></div>
+        </div>
+    </div>
+    </div>
+
+    <!--<div class="layui-form" id="setPictureShow">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">宽高</label>
+                <div class="layui-input-inline" style="width: 98px;">
+                    <input type="tel" name="width" value="1200" autocomplete="off" placeholder="width" class="layui-input demoSet">
+                </div>
+                <div class="layui-input-inline" style="width: 98px;">
+                    <input type="tel" name="height" value="600" autocomplete="off" placeholder="height" class="layui-input demoSet">
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">动画类型</label>
+            <div class="layui-input-block">
+                <div class="layui-btn-group demoTest" style="margin-top: 5px;">
+                    <button class="layui-btn layui-btn-sm" style="background-color: #5FB878;" data-type="set" data-key="anim" data-value="default">左右切换</button>
+                    <button class="layui-btn layui-btn-sm" data-type="set" data-key="anim" data-value="updown">上下切换</button>
+                    <button class="layui-btn layui-btn-sm" data-type="set" data-key="anim" data-value="fade">渐隐渐显</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">箭头状态</label>
+            <div class="layui-input-block">
+                <div class="layui-btn-group demoTest" style="margin-top: 5px;">
+                    <button class="layui-btn layui-btn-sm" style="background-color: #5FB878;" data-type="set" data-key="arrow" data-value="hover">悬停显示</button>
+                    <button class="layui-btn layui-btn-sm" data-type="set" data-key="arrow" data-value="always">始终显示</button>
+                    <button class="layui-btn layui-btn-sm" data-type="set" data-key="arrow" data-value="none">不显示</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">指示器位置</label>
+            <div class="layui-input-block">
+                <div class="layui-btn-group demoTest" style="margin-top: 5px;">
+                    <button class="layui-btn layui-btn-sm" style="background-color: #5FB878;" data-key="indicator" data-type="set" data-value="inside">容器内部</button>
+                    <button class="layui-btn layui-btn-sm" data-type="set" data-key="indicator" data-value="outside">容器外部</button>
+                    <button class="layui-btn layui-btn-sm" data-type="set" data-key="indicator" data-value="none">不显示</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">自动切换</label>
+                <div class="layui-input-block">
+                    <input type="checkbox" name="switch" lay-skin="switch" checked="" lay-text="ON|OFF" lay-filter="autoplay"><div class="layui-unselect layui-form-switch layui-form-onswitch" lay-skin="_switch"><em>ON</em><i></i></div>
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label" style="width: auto;">时间间隔</label>
+                <div class="layui-input-inline" style="width: 120px;">
+                    <input type="tel" name="interval" value="3000" autocomplete="off" placeholder="毫秒" class="layui-input demoSet">
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <script src="/static/layui/layui.js" charset="utf-8"></script>
+    <script src="/static/layui/bottom.js" charset="utf-8"></script>
+
+
+    <script type="text/javascript" src="/static/js/main.js"></script>
+    <script src="/static/js/student.js"></script>
+</div>
+
+
+</body>
+</html>
+
+

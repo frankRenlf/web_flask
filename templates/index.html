@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>小崽个人事务所</title>
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" media="screen" href="/static/css/login.css">
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/login1.css">
+    
+</head>
+<body>
+<!-- particles.js container -->
+<div id="particles-js" style="display: flex;align-items: center;justify-content: center">
+</div>
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form action="/account/register" method="post">
+            <h1>待做事务评估系统</h1>
+            <br>
+            <span>用户注册</span>
+            <input type="text" name="username" placeholder="用户名" id="regUserId"><span id="userExist"></span>
+            <input type="password" name="password" placeholder="密码" id="regPassword">
+<!--            <input type="password" placeholder="确认密码" id="comPassword">-->
+            <input type="submit" id="regBtn" value="注册"/>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="/account/login" method="post" {#id="loginForm"#}>
+            <h1>待做事务评估系统</h1>
+            <div class="social-container">
+             <a href="#" class="social">欢</a>
+             <a href="#" class="social">迎</a>
+
+            </div>
+            <span>账号密码登录</span>
+            <input type="text" placeholder="用户名"  name="username" id="userId">
+            <input type="password" placeholder="密码"  name="password" id="password">
+            {% if errorMsg %}
+            {{ errorMsg }}
+
+            {% endif %}
+           {% if msg %}
+            {{ msg }}
+            {% endif %}
+            <input type="submit" value="登录" {#id="loginBtn"#}/>
+            <a href="/account/admin">切换到管理员s登录</a>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>欢迎回来</h1>
+                <p>与我们保持联系请登录您的个人信息</p>
+                <button class="ghost" id="signIn">登录</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>加入我们</h1>
+                <p>想要快捷管理自己待做事务吗，那就赶快加入我们吧</p>
+                <button class="ghost" id="signUp">注册</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- scripts -->
+<script src="/static/js/particles.js"></script>
+<script src="/static/js/app.js"></script>
+<script src="/static/js/script.js"></script>
+<script src="/static/js/account.js" type="module"></script>
+<script src="/static/js/jquery.min.js"></script>
+<script>
+    function checkPassword(){
+    var password = $('#regPassword').value();
+    var compassword = $('#comPassword').value();
+    alert(compassword);
+    if(password != compassword){
+        alert('两次输入密码不一致');
+        return false;
+    }
+    return true;
+    }
+</script>
+</body>
+</html>
+<style>
+    a {
+        color: #53e3a6;
+    }
+
+    a:hover {
+        color: yellow;
+        font-size: 120%;
+
+    }
+
+    a:active {
+        color: blue;
+    }
+</style>
+
+

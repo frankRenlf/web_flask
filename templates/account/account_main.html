@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>主页</title>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/left-side-menu.css">
+    <link rel="stylesheet" type="text/css" href="/static/font/iconfont.css">
+
+    <link rel="stylesheet" href="/static/layui/css/layui.css" media="all">
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="/static/js/left-side-menu.js"></script>
+    <script type="text/javascript" src="/static/js/span-click.js"></script>
+    <script type="text/javascript" src="/static/js/main.js"></script>
+    <script src="/static/layui/layui.js" charset="utf-8"></script>
+
+</head>
+<body class="mainBody">
+
+<div class="left-side-menu" style="float: left; height: 100%">
+
+
+    <div class="lsm-container">
+        <div class="lsm-scroll">
+            <div class="lsm-sidebar">
+                <ul>
+
+                    <!-- 1 -->
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;">
+                            <i class="iconfont lsm-sidebar-icon icon-icon-"></i><span>事务管理</span><i
+                                class="iconfont lsm-sidebar-more"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="/account/undoneAffair"><span class="iconfont icon-guanliyuan" id="">待评价事务</span></a>
+                            </li>
+
+                            <li>
+                                <a href="/account/doneAffair"><span class="iconfont icon-icon_qq" id="gpwh">已评价事项</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;">
+                            <i class="iconfont lsm-sidebar-icon icon-icon-"></i><span>账号管理</span><i
+                                class="iconfont lsm-sidebar-account"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="/"><span class="iconfont icon-guanliyuan" id="">退出账号</span></a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                     <!--2-->
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<div class="layui-body" style="float:left" >
+    <div style="" id="rightBody">
+    <div class = "titlePic" style="position: relative; width: 100%; height: 130px">
+        <img src="/static/images/shouye1/header.png" alt="" style="width:100%" >
+    </div>
+    <div id="contentBody" style="position:absolute; height: 100%; width:100%; overflow: auto">
+        <div class = "picTra" style="position: absolute; height: 100%; width:100%; overflow: auto">
+            <div class="layui-carousel" id="test3" style="position:absolute; height: 80%; width:100%; overflow: auto">
+                <div carousel-item="">
+                    <div><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F12043730013%2F0.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637143577&t=d7e6417bd082021f0e6fcf8c60d1aecd" alt="" style="width:100%; height: 80%"></div>
+                    <div><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.vjshi.com%2F2018-04-15%2Fd0d0f302f25ea39a0a6120a78c4db70e%2F00003.jpg%3Fx-oss-process%3Dstyle%2Fwatermark&refer=http%3A%2F%2Fpic.vjshi.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637142922&t=c003990804bd85eff1c8d34677fa991c" alt="" style="width:100%; height: 80%"></div>
+                    <div><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fn.sinaimg.cn%2Fsinacn08%2F240%2Fw640h400%2F20180703%2F8f1a-hevauxi3451005.jpg&refer=http%3A%2F%2Fn.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637143453&t=198d39cbe98fd0243763cb07e4e1e515" alt="" style="width:100%; height: 80%"></div>
+                    <div><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg17.3lian.com%2Fd%2Ffile%2F201703%2F18%2Fc3500107c9e45a4e95ee49379a547374.jpg&refer=http%3A%2F%2Fimg17.3lian.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637143497&t=a5a6b500f4464abc59be870a7393df04" alt="" style="width:100%; height: 80%"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+        <div class = "bottom" style="position: relative; width: 550px;height:100%;bottom: 0px">
+            <img src="/static/images/shouye1/img_2.png" alt="" style="position: absolute; height: 100%">
+        </div>
+    </div>
+</div>
+<script src="/static/layui/layui.js" charset="utf-8"></script>
+<script src="/static/layui/bottom.js" charset="utf-8"></script>
+
+
+<script type="text/javascript" src="/static/js/main.js"></script>
+<script>
+layui.use(['carousel', 'form'], function(){
+  var carousel = layui.carousel
+  ,form = layui.form;
+
+  //常规轮播
+
+
+  //改变下时间间隔、动画类型、高度
+  carousel.render({
+    elem: '#test3'
+    ,interval: 1800
+    ,anim: 'fade'
+    ,height: '500px'
+  });
+
+  //设定各种参数
+  var ins3 = carousel.render({
+    elem: '#test3'
+  });
+  //图片轮播
+  carousel.render({
+    elem: '#test10'
+    ,width: '778px'
+    ,height: '440px'
+    ,interval: 5000
+  });
+
+  //事件
+  carousel.on('change(test4)', function(res){
+    console.log(res)
+  });
+
+  var $ = layui.$, active = {
+    set: function(othis){
+      var THIS = 'layui-bg-normal'
+      ,key = othis.data('key')
+      ,options = {};
+
+      othis.css('background-color', '#5FB878').siblings().removeAttr('style');
+      options[key] = othis.data('value');
+      ins3.reload(options);
+    }
+  };
+
+  //监听开关
+  form.on('switch(autoplay)', function(){
+    ins3.reload({
+      autoplay: this.checked
+    });
+  });
+
+  $('.demoSet').on('keyup', function(){
+    var value = this.value
+    ,options = {};
+    if(!/^\d+$/.test(value)) return;
+
+    options[this.name] = value;
+    ins3.reload(options);
+  });
+
+  //其它示例
+  $('.demoTest .layui-btn').on('click', function(){
+    var othis = $(this), type = othis.data('type');
+    active[type] ? active[type].call(this, othis) : '';
+  });
+});
+</script>
+
+<script>
+    var app = new Vue({
+        el: '#top',
+        data: {
+            message: ""
+        }
+    });
+</script>
+<style type="text/css">
+    #test3{
+    position: relative ! important;
+    width:100% ! important;
+    height:100% ! important;
+    }
+</style>
+</body>
+</html>
+
+
+

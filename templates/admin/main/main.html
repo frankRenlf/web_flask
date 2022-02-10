@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <title>中南大学学生宿舍系统</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/left-side-menu.css">
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="../js/left-side-menu.js"></script>
+    <script type="text/javascript" src="../js/span-click.js"></script>
+
+</head>
+<body>
+
+<img src="../images/znglxt.png"/>
+<div class="left-side-menu" style="float: left; height: 100%">
+    <div class="lsm-expand-btn">
+        <div class="lsm-mini-btn">
+            <label>
+                <input type="checkbox" checked="checked">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="30"/>
+                    <path class="line--1" d="M0 40h62c18 0 18-20-17 5L31 55"/>
+                    <path class="line--2" d="M0 50h80"/>
+                    <path class="line--3" d="M0 60h62c18 0 18 20-17-5L31 45"/>
+                </svg>
+            </label>
+
+        </div>
+
+
+    </div>
+    <div class="lsm-container">
+        <div class="lsm-scroll">
+            <div class="lsm-sidebar">
+                <ul>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i class="iconfont lsm-sidebar-icon icon-icon-"></i><span>账户信息</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:;"><span class="iconfont icon-guanliyuan"
+                                                             id="zhgl">账号密码管理</span></a></li>
+                            <li><a href="javascript:;"><span class="iconfont icon-loudong" id="ldxx">楼栋宿舍信息</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-icon_qq" id="qtxx">其它信息</span></a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i
+                                class="iconfont lsm-sidebar-icon icon-iconset0211"></i><span>危险数据查询</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href=""><span class="iconfont icon-Group-" id="shipin">视频数据</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-wenduji" id="wendu">温度湿度数据</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span
+                                    class="iconfont icon-IOTtubiao_huabanfuben" id="door">房门开关数据</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i
+                                class="iconfont lsm-sidebar-icon icon-yinshuiji"></i><span id="yishuiji">饮水机管理</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">打开</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">关闭</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span
+                                    class="iconfont icon-IOTtubiao_huabanfuben">喝杯卡布奇诺</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i
+                                class="iconfont lsm-sidebar-icon icon-shexiangtou"></i><span
+                                id="shexiangtou">摄像头管理</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">开启</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">关闭</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">回放</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i
+                                class="iconfont lsm-sidebar-icon icon-icon_service"></i><span id="kefu">联系客服</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">一栋管理员</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">二栋管理员</span></a>
+                            </li>
+                            <li><a href="javascript:;"><span class="iconfont icon-IOTtubiao_huabanfuben">三栋管理员</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i
+                                class="iconfont lsm-sidebar-icon icon-shezhi"></i><span id="shezhi">系统设置</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:;"><span class="iconfont icon-B">语言设置</span></a></li>
+                            <li><a href="javascript:;"><span class="iconfont icon-daxiaoxie">字体大小</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="lsm-sidebar-item">
+                        <a href="javascript:;"><i
+                                class="iconfont lsm-sidebar-icon icon-tuichu5"></i><span>退出系统</span><i
+                                class="iconfont lsm-sidebar-more"></i></a>
+                        <ul>
+                            <li><a href="javascript:;"><span class="iconfont icon-tuichu5">退出</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div style="float: left; width: 1299px ;margin-left: 0px;height: 100%" id="rightBody">
+    这是管理员登录页面
+</div>
+</body>
+</html>
+
+<script>
+
+    //账号密码信息管理
+    $('#zhgl').on('click', function (e) {
+        $.ajax({
+            type: "post",
+            url: "/main/userAndPwd",
+            async: true,
+            dataType: "html",//返回整合HTML
+            // dataType: "json",//返回json格式设置
+            data: {},
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                $("#rightBody").html(data);//刷新整个body页面的html
+            },
+            error: function () {
+                alert("请求失败")
+            }
+        })
+    })
+
+    //楼栋信息管理
+    $('#ldxx').on('click', function (e) {
+        $.ajax({
+            type: "post",
+            url: "/main/building",
+            async: true,
+            dataType: "html",//返回整合HTML
+            // dataType: "json",//返回json格式设置
+            data: {},
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                $("#rightBody").html(data);//刷新整个body页面的html
+            },
+            error: function () {
+                alert("请求失败")
+            }
+        })
+    })
+
+    //其他信息管理
+    $('#qtxx').on('click', function (e) {
+        $.ajax({
+            type: "post",
+            url: "/main/other",
+            async: true,
+            dataType: "html",//返回整合HTML
+            // dataType: "json",//返回json格式设置
+            data: {},
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                $("#rightBody").html(data);//刷新整个body页面的html
+            },
+            error: function () {
+                alert("请求失败")
+            }
+        })
+    })
+
+    //视频数据
+    $('#shipin').on('click', function (e) {
+        $.ajax({
+            type: "post",
+            url: "/main/camera",
+            async: true,
+            dataType: "html",//返回整合HTML
+            // dataType: "json",//返回json格式设置
+            data: {},
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                $("#rightBody").html(data);//刷新整个body页面的html
+            },
+            error: function () {
+                alert("请求失败")
+            }
+        })
+    })
+
+    //温度数据
+    $('#wendu').on('click', function (e) {
+        $.ajax({
+            type: "post",
+            url: "/main/temperature",
+            async: true,
+            dataType: "html",//返回整合HTML
+            // dataType: "json",//返回json格式设置
+            data: {},
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                $("#rightBody").html(data);//刷新整个body页面的html
+            },
+            error: function () {
+                alert("请求失败")
+            }
+        })
+    })
+
+    //房门数据
+    $('#door').on('click', function (e) {
+        $.ajax({
+            type: "post",
+            url: "/main/door",
+            async: true,
+            dataType: "html",//返回整合HTML
+            // dataType: "json",//返回json格式设置
+            data: {},
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                $("#rightBody").html(data);//刷新整个body页面的html
+            },
+            error: function () {
+                alert("请求失败")
+            }
+        })
+    })
+
+    //摄像头管理
+    $('#shexiangtou').on('click', function (e) {
+        $.ajax({
+            type: "post",
+            url: "/main/cameraManage",
+            async: true,
+            dataType: "html",//返回整合HTML
+            // dataType: "json",//返回json格式设置
+            data: {},
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                $("#rightBody").html(data);//刷新整个body页面的html
+            },
+            error: function () {
+                alert("请求失败")
+            }
+        })
+    })
+
+    //饮水机管理
+    $('#yishuiji').on('click', function (e) {
+        $.ajax({
+            type: "post",
+            url: "/main/water",
+            async: true,
+            dataType: "html",//返回整合HTML
+            // dataType: "json",//返回json格式设置
+            data: {},
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                $("#rightBody").html(data);//刷新整个body页面的html
+            },
+            error: function () {
+                alert("请求失败")
+            }
+        })
+    })
+
+    //系统设置
+    $('#shezhi').on('click', function (e) {
+        $.ajax({
+            type: "post",
+            url: "/main/setup",
+            async: true,
+            dataType: "html",//返回整合HTML
+            // dataType: "json",//返回json格式设置
+            data: {},
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                $("#rightBody").html(data);//刷新整个body页面的html
+            },
+            error: function () {
+                alert("请求失败")
+            }
+        })
+    })
+
+    //联系客服
+    $('#kefu').on('click', function (e) {
+        $.ajax({
+            type: "post",
+            url: "/main/customerService",
+            async: true,
+            dataType: "html",//返回整合HTML
+            // dataType: "json",//返回json格式设置
+            data: {},
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                $("#rightBody").html(data);//刷新整个body页面的html
+            },
+            error: function () {
+                alert("请求失败")
+            }
+        })
+    })
+</script>
+
